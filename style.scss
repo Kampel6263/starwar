@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  background: url("depositphotos_185182290-stock-photo-spaceship-grunge-interior-window-isolated.jpg")
+    center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#field {
+  position: relative;
+  width: 1007px;
+  margin: 20px auto;
+  height: 600px;
+  background: #111;
+  overflow: hidden;
+  border-radius: 50px;
+  // opacity: ;
+}
+
+.star {
+  width: 1px;
+  height: 1px;
+
+  border-radius: 50%;
+  background: rgb(255, 242, 61);
+  position: absolute;
+}
+
+#ship {
+  width: 50px;
+  height: 130px;
+  background: url("2InzU9b.png") center no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  // transform: rotate(45deg);
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background: rgb(0, 4, 255);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 30px;
+}
+
+.asteroid {
+  width: 50px;
+  height: 50px;
+  background: url("asteroid.png") center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -50px;
+}
+
+#score {
+  font-size: 80px;
+  position: absolute;
+  right: 100px;
+  top: 200px;
+  z-index: 100;
+  color: yellow;
+  background: rgba($color: #000000, $alpha: 0.6);
+  padding: 0 6px;
+}
+
+#antiScore {
+  font-size: 80px;
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  z-index: 100;
+  color: lime;
+  background: rgba($color: #000000, $alpha: 0.6);
+  padding: 0 6px;
+}
